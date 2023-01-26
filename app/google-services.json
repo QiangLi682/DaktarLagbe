@@ -1,33 +1,42 @@
 {
   "project_info": {
-    "project_number": "437398415130",
-    "project_id": "daktarlagbe-5daef",
-    "storage_bucket": "daktarlagbe-5daef.appspot.com"
+    "project_number": "282832370395",
+    "firebase_url": "https://nurseapp-a451e-default-rtdb.firebaseio.com",
+    "project_id": "nurseapp-a451e",
+    "storage_bucket": "nurseapp-a451e.appspot.com"
   },
   "client": [
     {
       "client_info": {
-        "mobilesdk_app_id": "1:437398415130:android:c3112d4e0f9f3d7f5f6ea3",
+        "mobilesdk_app_id": "1:282832370395:android:55d87b3d512f7b2ece2afe",
         "android_client_info": {
           "package_name": "com.mhutshow.daktarlagbe"
         }
       },
       "oauth_client": [
         {
-          "client_id": "437398415130-tukenf3dlh15kgb94b9qtctpoqtbvvab.apps.googleusercontent.com",
+          "client_id": "282832370395-ghf05co5lcj6ahh6ck09rcdpvn3qqjlg.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.mhutshow.daktarlagbe",
+            "certificate_hash": "8aca1e1ba2971ca1daadf3cac4b27c87b86216dd"
+          }
+        },
+        {
+          "client_id": "282832370395-b9j429sma2j44vdv6idi728gusbekq0b.apps.googleusercontent.com",
           "client_type": 3
         }
       ],
       "api_key": [
         {
-          "current_key": "AIzaSyAOtLiikTaemD5cjv98w33baoYpPRo5mkM"
+          "current_key": "AIzaSyCHxk7nAX-IM7D-JpTcykmxxxaavfMWe64"
         }
       ],
       "services": {
         "appinvite_service": {
           "other_platform_oauth_client": [
             {
-              "client_id": "437398415130-tukenf3dlh15kgb94b9qtctpoqtbvvab.apps.googleusercontent.com",
+              "client_id": "282832370395-b9j429sma2j44vdv6idi728gusbekq0b.apps.googleusercontent.com",
               "client_type": 3
             }
           ]

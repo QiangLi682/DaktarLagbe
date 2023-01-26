@@ -128,6 +128,8 @@ public class MainActivity extends AppCompatActivity {
                                     // Sign in success, update UI with the signed-in user's information
                                     Log.d("TAG", "signInWithEmail:success");
                                     FirebaseUser user = mAuth.getCurrentUser();
+
+                                    Log.d("TAG",user.getEmail());
                                     updateUI(user);
                                 } else {
                                     // If sign in fails, display a message to the user.
@@ -232,6 +234,7 @@ public class MainActivity extends AppCompatActivity {
     private void updateUI(final FirebaseUser currentUser) {
         if(currentUser!=null){
             try {
+
                 UsersRef.document(currentUser.getEmail()).get().addOnSuccessListener(new OnSuccessListener<DocumentSnapshot>() {
                     @Override
                     public void onSuccess(DocumentSnapshot documentSnapshot) {
