@@ -9,11 +9,14 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
 import android.widget.DatePicker;
+import android.widget.TextView;
 import android.widget.Toast;
 
+import com.google.firebase.firestore.DocumentSnapshot;
 import com.mhutshow.daktarlagbe.R;
 import com.mhutshow.daktarlagbe.model.Common.Common;
 import com.google.firebase.auth.FirebaseAuth;
+import com.mhutshow.daktarlagbe.model.fireStoreApi.UserHelper;
 
 import java.util.Calendar;
 
@@ -46,8 +49,15 @@ public class DoctorHomeActivity extends AppCompatActivity implements DatePickerD
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_doctor_home); //ici layout de page d'acceuil MEDECIN
         unbinder = ButterKnife.bind(this,this);
+
         Common.CurreentDoctor = FirebaseAuth.getInstance().getCurrentUser().getEmail().toString();
         Common.CurrentUserType = "doctor";
+
+
+        TextView textView = (TextView) findViewById(R.id.doctorName);
+        textView.setText("Welcome " + UserHelper.getCurrentUser().getName());
+
+
         listPatients = findViewById(R.id.listPatients);
         BtnRequst=findViewById(R.id.btnRequst);
         SignOutBtn2=findViewById(R.id.signOutBtn);

@@ -32,6 +32,7 @@ import com.google.firebase.auth.GoogleAuthProvider;
 import com.google.firebase.firestore.CollectionReference;
 import com.google.firebase.firestore.DocumentSnapshot;
 import com.google.firebase.firestore.FirebaseFirestore;
+import com.mhutshow.daktarlagbe.model.fireStoreApi.UserHelper;
 
 public class MainActivity extends AppCompatActivity {
     private static int RC_SIGN_IN = 100;
@@ -243,6 +244,7 @@ public class MainActivity extends AppCompatActivity {
                                 @Override
                                 public void onSuccess(DocumentSnapshot documentSnapshot) {
                                     User user=documentSnapshot.toObject(User.class);
+                                    UserHelper.setCurrentUser(user);
                                     if(user.getType().equals("Patient")){
                                         Intent k = new Intent(MainActivity.this, HomeActivity.class);
                                         startActivity(k);

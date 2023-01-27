@@ -115,31 +115,31 @@ public class SearchPatActivity extends AppCompatActivity {
                 return true;
             case R.id.option_general:
                 DoctorAdapterFiltred.specialiteSearch = true;
-                adapter.getFilter().filter("Médecin général");
+                adapter.getFilter().filter("Registered Nurse (RN)");
                 return true;
             case R.id.option_Dentiste:
                 DoctorAdapterFiltred.specialiteSearch = true;
-                adapter.getFilter().filter("Dentiste");
+                adapter.getFilter().filter("Cardiac Nurse");
                 return true;
             case R.id.option_Ophtalmologue:
                 DoctorAdapterFiltred.specialiteSearch = true;
-                adapter.getFilter().filter("Ophtalmologue");
+                adapter.getFilter().filter("Clinical Nurse Specialist (CNS)");
                 return true;
             case R.id.option_ORL:
                 DoctorAdapterFiltred.specialiteSearch = true;
-                adapter.getFilter().filter("ORL");
+                adapter.getFilter().filter("Critical Care Nurse");
                 return true;
             case R.id.option_Pédiatre:
                 DoctorAdapterFiltred.specialiteSearch = true;
-                adapter.getFilter().filter("Pédiatre");
+                adapter.getFilter().filter("ER Nurse");
                 return true;
             case R.id.option_Radiologue:
                 DoctorAdapterFiltred.specialiteSearch = true;
-                adapter.getFilter().filter("Radiologue");
+                adapter.getFilter().filter("Family Nurse Practitioner (FNP)");
                 return true;
             case R.id.option_Rhumatologue:
                 DoctorAdapterFiltred.specialiteSearch = true;
-                adapter.getFilter().filter("Rhumatologue");
+                adapter.getFilter().filter("Geriatric Nursing");
                 return true;
             default:
                 return super.onOptionsItemSelected(item);
@@ -150,7 +150,7 @@ public class SearchPatActivity extends AppCompatActivity {
     private void configureToolbar(){
         // Get the toolbar view inside the activity layout
         Toolbar toolbar = (Toolbar) findViewById(R.id.activity_main_toolbar);
-        toolbar.setTitle("Doctors list");
+        toolbar.setTitle("Nurses list");
         // Sets the Toolbar
         setSupportActionBar(toolbar);
     }

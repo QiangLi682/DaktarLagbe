@@ -44,6 +44,7 @@ public class FirstSigninActivity extends AppCompatActivity {
         // Apply the adapter to the spinner
         spinner.setAdapter(adapter);
 
+
         final Spinner specialiteList = (Spinner) findViewById(R.id.specialite_spinner);
         ArrayAdapter<CharSequence> adapterSpecialiteList = ArrayAdapter.createFromResource(this,
                 R.array.specialite_spinner, android.R.layout.simple_spinner_item);
@@ -58,6 +59,7 @@ public class FirstSigninActivity extends AppCompatActivity {
                 Log.e(TAG, "onItemSelected:" + selected);
                 if (selected.equals("Doctor")) {
                     specialiteList.setVisibility(View.VISIBLE);
+                    Log.d(TAG, "it is nurse");
                 } else {
                     specialiteList.setVisibility(View.GONE);
                 }

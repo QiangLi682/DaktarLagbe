@@ -97,7 +97,7 @@
         android:layout_height="wrap_content"
         android:layout_marginTop="24dp"
         android:textSize="24sp"
-        android:text="Choose your role"
+        android:text="I am a "
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/firstSignTel" />

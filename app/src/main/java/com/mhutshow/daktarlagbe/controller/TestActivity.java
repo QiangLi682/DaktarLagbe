@@ -130,7 +130,7 @@ public class TestActivity extends AppCompatActivity {
             }
         });
 
-        loadTimeSlotOfDoctor("testdoc@testdoc.com");
+        loadTimeSlotOfDoctor("1@nurse.com");
     }
 
 

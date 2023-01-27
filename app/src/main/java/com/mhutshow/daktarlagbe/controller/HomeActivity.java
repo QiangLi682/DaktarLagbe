@@ -6,6 +6,7 @@ import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
+import android.widget.TextView;
 
 import com.mhutshow.daktarlagbe.R;
 import com.mhutshow.daktarlagbe.model.Common.Common;
@@ -13,6 +14,7 @@ import com.google.android.gms.tasks.OnSuccessListener;
 import com.google.firebase.auth.FirebaseAuth;
 import com.google.firebase.firestore.DocumentSnapshot;
 import com.google.firebase.firestore.FirebaseFirestore;
+import com.mhutshow.daktarlagbe.model.fireStoreApi.UserHelper;
 
 public class HomeActivity extends AppCompatActivity {
     Button SignOutBtn;
@@ -25,6 +27,12 @@ public class HomeActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_home);
+
+
+        TextView textView = (TextView) findViewById(R.id.patientName);
+        textView.setText("Welcome " + UserHelper.getCurrentUser().getName());
+
+
         appointment = findViewById(R.id.appointement2);
         appointment.setOnClickListener(new View.OnClickListener() {
             @Override

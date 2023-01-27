@@ -5,21 +5,17 @@ public class Patient {
     private String adresse;
     private String tel;
     private String email;
-    private String dateNaissance;
-    private String situationFamiliale;
 
 
     public Patient(){
         //needed for firebase
     }
 
-    public Patient(String name, String adresse, String tel, String email, String dateNaissance, String situationFamiliale) {
+    public Patient(String name, String adresse, String tel, String email) {
         this.name = name;
         this.adresse = adresse;
         this.tel = tel;
         this.email = email;
-        this.dateNaissance = dateNaissance;
-        this.situationFamiliale = situationFamiliale;
     }
 
     public String getName() {
@@ -54,19 +50,5 @@ public class Patient {
         this.email = email;
     }
 
-    public String getDateNaissance() {
-        return dateNaissance;
-    }
 
-    public void setDateNaissance(String dateNaissance) {
-        this.dateNaissance = dateNaissance;
-    }
-
-    public String getSituationFamiliale() {
-        return situationFamiliale;
-    }
-
-    public void setSituationFamiliale(String situationFamiliale) {
-        this.situationFamiliale = situationFamiliale;
-    }
 }

@@ -10,7 +10,7 @@ public class PatientHelper {
     static CollectionReference PatientRef = db.collection("Patient");
 
     public static void addPatient(String name, String adresse, String tel){
-        Patient patient = new Patient(name,adresse,tel,FirebaseAuth.getInstance().getCurrentUser().getEmail(),"aaa", "aaa");
+        Patient patient = new Patient(name,adresse,tel,FirebaseAuth.getInstance().getCurrentUser().getEmail());
         System.out.println("Create object patient");
         PatientRef.document(FirebaseAuth.getInstance().getCurrentUser().getEmail()).set(patient);
     }
