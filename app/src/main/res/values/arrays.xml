@@ -4,6 +4,12 @@
         <item>Patient</item>
         <item>Doctor</item>
     </string-array>
+
+    <string-array name="planets_array3">
+        <item>Patient</item>
+        <item>Nurse</item>
+    </string-array>
+
     <string-array name="planets_array2" >
         <item>Consultation</item>
         <item>Hospitalisation</item>
