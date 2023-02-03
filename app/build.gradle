@@ -1,5 +1,12 @@
+
+plugins {
+    id 'com.google.android.libraries.mapsplatform.secrets-gradle-plugin'
+}
+
 apply plugin: 'com.android.application'
 apply plugin: 'com.google.gms.google-services'  // Google Services plugin
+
+
 
 android {
 
@@ -8,13 +15,13 @@ android {
         sourceCompatibility = "8"
     }
 
-    compileSdkVersion 29
-    buildToolsVersion "29.0.3"
+    compileSdkVersion 33
+    //buildToolsVersion "29.0.3"
 
     defaultConfig {
         applicationId "com.mhutshow.daktarlagbe"
-        minSdkVersion 16
-        targetSdkVersion 29
+        minSdkVersion 21
+        targetSdkVersion 33
         versionCode 1
         versionName "1.0"
         multiDexEnabled true
@@ -64,5 +71,7 @@ dependencies {
 
     implementation 'com.firebaseui:firebase-ui-firestore:4.1.0'
     implementation 'com.google.firebase:firebase-storage:19.1.1'
-
+    implementation 'com.google.android.gms:play-services-maps:18.1.0'
+    implementation 'com.google.android.gms:play-services-location:21.0.1'
+    implementation('com.google.android.libraries.places:places:3.0.0')
 }

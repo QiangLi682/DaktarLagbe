@@ -44,6 +44,13 @@ public class DoctorHomeActivity extends AppCompatActivity implements DatePickerD
         startActivity(k);
     }
 
+    @OnClick(R.id.myLocationBtn)
+    void myLocationOnClick(){
+        Toast.makeText(this,"clicked",Toast.LENGTH_SHORT).show();
+        Intent k = new Intent(DoctorHomeActivity.this, MyLocationActivity.class);
+        startActivity(k);
+    }
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
